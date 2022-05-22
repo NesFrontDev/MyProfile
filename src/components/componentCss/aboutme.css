@@ -56,3 +56,17 @@
     margin-top: 15px;
   
   }
+  .Colrsm{
+    
+    padding: 2rem;
+   
+  }
+  .Colrsm p {
+    font-size: 12px;
+  }
+  .Colrsm a {
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    font-size: 30px;
+  }

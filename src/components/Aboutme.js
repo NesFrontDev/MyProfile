@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container,Row,Col } from 'react-bootstrap';
 import {  } from "./componentCss/aboutme.css";
 
 
@@ -28,6 +28,8 @@ function Aboutme() {
                         <b>DOWNLOAD CV</b>
                     </Button>
                 </div>
+
+                
             </Container>
         </div>
 

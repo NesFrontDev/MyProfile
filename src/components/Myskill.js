@@ -3,7 +3,7 @@ import { } from "./componentCss/myskill.css"
 import {FaReact,FaHtml5,FaCss3Alt,FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
-import { DiSqllite } from "react-icons/di";
+import { DiSqllite,DiSwift } from "react-icons/di";
 
 
 
@@ -22,8 +22,8 @@ function Myskill() {
                 <h1><FaNodeJs /><p/>NodeJS</h1>
                 <h1><GrMysql /><p/>MySQL</h1>
                 <h1><DiSqllite /><p/>SQLLite</h1>
-                
                 </div>
+              
                 
             </Container>
 

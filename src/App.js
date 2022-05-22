@@ -5,7 +5,7 @@ import Navbarr from './components/Navbarr';
 import Allcard from './components/Allcard';
 import  Aboutme  from "./components/Aboutme";
 import Myskill   from "./components/Myskill";
-
+import Footer from "./components/Footer";
 
 
 
@@ -18,6 +18,7 @@ function App() {
       <Allcard />
       <Aboutme />
       <Myskill />
+      <Footer/>
     </div>
   );
 }

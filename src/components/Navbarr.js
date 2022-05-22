@@ -22,14 +22,14 @@ const Navbarr = () => {
 
           <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled" >Nes</Tooltip>}>
             <span className="d-inline-block">
-            <h6 style={{ marginTop: "7px" }}><b>NATTHAPONG PHETKHAI</b></h6>
+            <h6 style={{ marginTop: "7px",marginLeft:"60px" }}><b>NATTHAPONG PHETKHAI</b></h6>
             </span>
           </OverlayTrigger>
           
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-          <Navbar.Collapse id="basic-navbar-nav" style={{ marginRight: "130px" }}>
+          {/* <Navbar.Collapse id="basic-navbar-nav" style={{ marginRight: "130px" }}>
             <Nav className="mx-auto pe-md-flex">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
@@ -42,7 +42,7 @@ const Navbarr = () => {
               </NavDropdown>
             </Nav>
 
-          </Navbar.Collapse>
+          </Navbar.Collapse> */}
 
           <Example />
 
