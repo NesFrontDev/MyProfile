@@ -10,6 +10,8 @@ import Myskill   from "./components/Myskill";
 
 
 function App() {
+  
+  
   return (
     <div>
       <Navbarr />

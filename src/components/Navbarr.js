@@ -1,15 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
-import { Nav, Navbar, NavDropdown, Container, Button } from 'react-bootstrap';
-import {  } from "./componentCss/Navbar.css";
-
-
+import { Nav, Navbar, NavDropdown, Container, Button, Popover, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { } from "./componentCss/Navbar.css";
+import Example from "./Elements/Example";
 
 const Navbarr = () => {
-  const [data, setData] = useState(0);
- 
+
   return (
-    <div >
+    <div>
       <Navbar bg="light" expand="lg" fixed="top">
         <Container>
 
@@ -23,11 +20,16 @@ const Navbarr = () => {
             />
           </a>
 
-          <h6 style={{ marginTop: "7px" }}><b>NATTHAPONG PHETKHAI</b></h6>
+          <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-disabled" >Nes</Tooltip>}>
+            <span className="d-inline-block">
+            <h6 style={{ marginTop: "7px" }}><b>NATTHAPONG PHETKHAI</b></h6>
+            </span>
+          </OverlayTrigger>
+          
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" style={{ marginRight: "130px" }}>
             <Nav className="mx-auto pe-md-flex">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
@@ -39,9 +41,10 @@ const Navbarr = () => {
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+
           </Navbar.Collapse>
-          <p style={{ marginTop: "14px", marginRight: "15px", marginLeft: "32px" }}><b>viewer : {data}</b></p>
-          <Button onClick={() => setData(data + 1)} variant="secondary"><b>CONTACT'ME</b></Button>{' '}
+
+          <Example />
 
         </Container>
       </Navbar>
